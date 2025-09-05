@@ -82,7 +82,7 @@ const Sobre = () => (
           { title: "Foco no cliente", desc: "Atendimento próximo e soluções sob medida." },
           { title: "Agilidade", desc: "Prazos enxutos sem abrir mão da qualidade." },
           { title: "Qualidade", desc: "Impressão premium e acabamentos especiais." },
-          { title: "Atendimento nacional", desc: "Enviamos para todo o Brasil e Chile." },
+          { title: "Atendimento nacional", desc: "Enviamos para todo o Brasil." },
         ].map((item, i) => (
           <div key={i} className="p-6 border rounded-2xl shadow-sm">
             <p className="font-semibold text-slate-900">{item.title}</p>
