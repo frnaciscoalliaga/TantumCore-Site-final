@@ -5,12 +5,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Tantum Core",
-  description: "Soluções Inteligentes em Logística",
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-32x32.png",
-    apple: "/apple-touch-icon.png",
-  },
+  description: "Soluções inteligentes em logística, materiais, storage e serviços personalizados.",
 };
 
 export default function RootLayout({ children }) {
