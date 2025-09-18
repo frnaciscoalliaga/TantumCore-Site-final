@@ -1,14 +1,27 @@
 "use client";
 
 import Image from "next/image";
-import Hero from "@/components/Hero";
-import Footer from "@/components/Footer";
 
 export default function Page() {
   return (
     <main>
       {/* HERO */}
-      <Hero />
+      <section className="relative h-[80vh] flex items-center justify-center bg-gray-900">
+        <Image
+          src="/images/hero.jpg"
+          alt="Hero Image"
+          fill
+          className="object-cover opacity-70"
+          priority
+        />
+        <div className="relative z-10 text-center text-white">
+          <h1 className="text-5xl font-bold mb-4">Bem-vindo à Tantum Core</h1>
+          <p className="text-lg max-w-2xl mx-auto">
+            Soluções inteligentes em logística, materiais, storage e serviços
+            personalizados para sua empresa.
+          </p>
+        </div>
+      </section>
 
       {/* SOBRE */}
       <section id="sobre" className="p-12 text-center">
@@ -21,8 +34,9 @@ export default function Page() {
         />
         <h2 className="text-3xl font-bold mb-4">Sobre Nós</h2>
         <p className="max-w-2xl mx-auto text-lg text-gray-600">
-          A Tantum Core oferece soluções inteligentes em logística, materiais,
-          storage e serviços personalizados para sua empresa.
+          A Tantum Core oferece soluções completas e inovadoras, unindo
+          tecnologia e expertise para otimizar processos logísticos, gestão de
+          materiais, armazenamento e serviços sob medida.
         </p>
       </section>
 
@@ -112,7 +126,9 @@ export default function Page() {
       </section>
 
       {/* FOOTER */}
-      <Footer />
+      <footer className="p-6 text-center bg-gray-900 text-white">
+        <p>© {new Date().getFullYear()} Tantum Core. Todos os direitos reservados.</p>
+      </footer>
     </main>
   );
 }
