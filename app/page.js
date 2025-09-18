@@ -14,7 +14,7 @@ export default function Page() {
           className="object-cover opacity-70"
           priority
         />
-        <div className="relative z-10 text-center text-white">
+        <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-5xl font-bold mb-4">Bem-vindo à Tantum Core</h1>
           <p className="text-lg max-w-2xl mx-auto">
             Soluções inteligentes em logística, materiais, storage e serviços
@@ -107,21 +107,49 @@ export default function Page() {
       {/* CONTATO */}
       <section id="contato" className="p-12 bg-gray-50 text-center">
         <h2 className="text-3xl font-bold mb-6">Fale Conosco</h2>
-        <div className="flex justify-center items-center gap-4">
-          <Image
-            src="/icons/whatsapp.png"
-            alt="WhatsApp"
-            width={32}
-            height={32}
-          />
-          <a
-            href="https://wa.me/55SEUNUMERO"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-lg font-medium text-green-600"
-          >
-            +55 (XX) XXXXX-XXXX
-          </a>
+
+        <div className="flex flex-col md:flex-row justify-center items-center gap-6">
+          {/* WhatsApp */}
+          <div className="flex items-center gap-3">
+            <Image
+              src="/icons/whatsapp.png"
+              alt="WhatsApp"
+              width={32}
+              height={32}
+            />
+            <a
+              href="https://wa.me/55SEUNUMERO"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg font-medium text-green-600"
+            >
+              +55 (XX) XXXXX-XXXX
+            </a>
+          </div>
+
+          {/* Telefone */}
+          <div className="flex items-center gap-3">
+            <Image
+              src="/icons/phone.png"
+              alt="Telefone"
+              width={28}
+              height={28}
+            />
+            <a href="tel:+55XXXXXXXXX" className="text-lg font-medium text-gray-700">
+              +55 (XX) XXXXX-XXXX
+            </a>
+          </div>
+
+          {/* Email */}
+          <div className="flex items-center gap-3">
+            <Image src="/icons/email.png" alt="E-mail" width={28} height={28} />
+            <a
+              href="mailto:contato@tantumcore.com"
+              className="text-lg font-medium text-gray-700"
+            >
+              contato@tantumcore.com
+            </a>
+          </div>
         </div>
       </section>
 
