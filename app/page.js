@@ -53,11 +53,11 @@ export default function Page() {
           </div>
           <div className="flex justify-center">
             <Image
-              src="/images/logo.png"
-              alt="Logo Tantum Core"
-              width={200}
-              height={200}
-              className="rounded-lg"
+              src="/images/hero1.jpg"
+              alt="Equipe Tantum Core"
+              width={500}
+              height={400}
+              className="rounded-lg shadow"
             />
           </div>
         </div>
@@ -81,65 +81,4 @@ export default function Page() {
               <h3 className="mt-4 text-xl font-semibold">Storage</h3>
             </div>
             <div>
-              <Image src="/images/service-solucoes.jpg" alt="Soluções" width={400} height={300} className="mx-auto rounded-lg shadow" />
-              <h3 className="mt-4 text-xl font-semibold">Soluções</h3>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Portfólio */}
-      <section id="portfolio" className="py-16 bg-white">
-        <div className="mx-auto max-w-7xl px-4">
-          <h2 className="text-3xl font-bold text-center mb-10">Portfólio</h2>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {["1","2","3","4","5","6"].map((num) => (
-              <div key={num} className="rounded-lg overflow-hidden shadow">
-                <Image
-                  src={`/images/portfolio${num}.jpg`}
-                  alt={`Portfólio ${num}`}
-                  width={300}
-                  height={300}
-                  className="object-cover w-full h-full"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Contato */}
-      <section id="contato" className="py-16 bg-slate-50">
-        <div className="mx-auto max-w-7xl px-4 text-center space-y-6">
-          <h2 className="text-3xl font-bold">Fale Conosco</h2>
-          <div className="flex flex-col md:flex-row justify-center items-center gap-8">
-            <div className="flex items-center gap-3">
-              <Image src="/icons/whatsapp.png" alt="WhatsApp" width={28} height={28} />
-              <a href="https://wa.me/5511963141890" className="text-lg font-medium text-green-600">
-                +55 11 96314-1890
-              </a>
-            </div>
-            <div className="flex items-center gap-3">
-              <Image src="/icons/phone.png" alt="Telefone" width={28} height={28} />
-              <a href="tel:+5511963141890" className="text-lg font-medium text-gray-700">
-                +55 11 96314-1890
-              </a>
-            </div>
-            <div className="flex items-center gap-3">
-              <Image src="/icons/email.png" alt="Email" width={28} height={28} />
-              <a href="mailto:tantumcore@gmail.com" className="text-lg font-medium text-gray-700">
-                tantumcore@gmail.com
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="py-10 bg-gray-900 text-white text-center">
-        <p>© {new Date().getFullYear()} Tantum Core. Todos os direitos reservados.</p>
-      </footer>
-
-    </main>
-  );
-}
+              <Image src="/images/service-solucoes.jpg" alt="Soluções" width={400} height=
